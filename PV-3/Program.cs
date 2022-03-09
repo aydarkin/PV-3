@@ -53,6 +53,9 @@ void Input(ref int n, ref double eps, ref double[]? B, ref double[][]? A)
 
 void Solve(string[] args)
 {
+    // аргументы
+    args = new string[] {"-n", "5"};
+
     stopwatch.Start();
     MPI.Environment.Run(ref args, communicator =>
     {
